@@ -1,0 +1,12 @@
+2026-09-28T12:12:57.935816	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-28T12:12:57.948684	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-28T12:12:57.948798	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-28T12:12:57.948921	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-28T12:33:08.931328	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "2e1fdf35-416c-4289-b920-cacc93fcece0", "url": "/api/v1/users", "http method": "POST", "time": "2026-09-28T09:33:08.931325"}
+2026-09-28T12:33:08.931617	DEBUG	http/create_user.go:26	invoce CreateUser handler	{"request_id": "2e1fdf35-416c-4289-b920-cacc93fcece0", "url": "/api/v1/users"}
+2026-09-28T12:33:08.932938	ERROR	response/handler.go:68	failed to decode and validate HTTP request	{"request_id": "2e1fdf35-416c-4289-b920-cacc93fcece0", "url": "/api/v1/users", "error": "EOF"}
+2026-09-28T12:33:08.933700	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "2e1fdf35-416c-4289-b920-cacc93fcece0", "url": "/api/v1/users", "status_code": 500, "latency": "2.371052ms"}
+2026-09-28T18:28:35.574838	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "fa7bdaf6-9603-4e71-b7b2-5cc0333b3024", "url": "/api/v1/users", "http method": "POST", "time": "2026-09-28T15:28:35.574818"}
+2026-09-28T18:28:35.575076	DEBUG	http/create_user.go:26	invoce CreateUser handler	{"request_id": "fa7bdaf6-9603-4e71-b7b2-5cc0333b3024", "url": "/api/v1/users"}
+2026-09-28T18:28:35.575433	ERROR	response/handler.go:68	failed to decode and validate HTTP request	{"request_id": "fa7bdaf6-9603-4e71-b7b2-5cc0333b3024", "url": "/api/v1/users", "error": "EOF"}
+2026-09-28T18:28:35.576073	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "fa7bdaf6-9603-4e71-b7b2-5cc0333b3024", "url": "/api/v1/users", "status_code": 500, "latency": "1.254043ms"}

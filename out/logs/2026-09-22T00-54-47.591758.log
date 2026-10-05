@@ -1,0 +1,19 @@
+2026-09-22T03:54:47.591862	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-22T03:54:47.610347	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-22T03:54:47.610405	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-22T03:54:47.611515	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-22T03:54:56.230929	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "d11d6d01-ba82-40ad-a627-92e2ce2382b6", "url": "/api/v1/users", "time": "2026-09-22T00:54:56.230927"}
+2026-09-22T03:54:56.231049	DEBUG	http/create_user.go:26	invoce CreateUser handler	{"request_id": "d11d6d01-ba82-40ad-a627-92e2ce2382b6", "url": "/api/v1/users"}
+2026-09-22T03:54:56.232715	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "d11d6d01-ba82-40ad-a627-92e2ce2382b6", "url": "/api/v1/users", "error": "EOF"}
+2026-09-22T03:54:56.233157	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "d11d6d01-ba82-40ad-a627-92e2ce2382b6", "url": "/api/v1/users", "status_code": 500, "latency": "2.229116ms"}
+2026-09-22T03:55:29.576216	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "7b82e01a-8eb3-4242-a952-06b5d20df87d", "url": "/api/v1/users", "time": "2026-09-22T00:55:29.576215"}
+2026-09-22T03:55:29.576342	DEBUG	http/create_user.go:26	invoce CreateUser handler	{"request_id": "7b82e01a-8eb3-4242-a952-06b5d20df87d", "url": "/api/v1/users"}
+2026-09-22T03:55:29.576449	WARN	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "7b82e01a-8eb3-4242-a952-06b5d20df87d", "url": "/api/v1/users", "error": "request validation: Key: 'CreateUserRequest.FullName' Error:Field validation for 'FullName' failed on the 'required' tag: invalid argument"}
+2026-09-22T03:55:29.576529	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "7b82e01a-8eb3-4242-a952-06b5d20df87d", "url": "/api/v1/users", "error": "EOF"}
+2026-09-22T03:55:29.576566	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "7b82e01a-8eb3-4242-a952-06b5d20df87d", "url": "/api/v1/users", "status_code": 500, "latency": "350.743µs"}
+2026-09-22T03:56:41.025341	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "165cf062-6452-469e-90b4-932ac4485612", "url": "/api/v1/users", "time": "2026-09-22T00:56:41.025308"}
+2026-09-22T03:56:41.025430	DEBUG	http/create_user.go:26	invoce CreateUser handler	{"request_id": "165cf062-6452-469e-90b4-932ac4485612", "url": "/api/v1/users"}
+2026-09-22T03:56:41.025498	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "165cf062-6452-469e-90b4-932ac4485612", "url": "/api/v1/users", "error": "EOF"}
+2026-09-22T03:56:41.025565	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "165cf062-6452-469e-90b4-932ac4485612", "url": "/api/v1/users", "status_code": 500, "latency": "255.844µs"}
+2026-09-22T03:59:55.775597	WARN	server/server.go:74	shutdown HTTP server...
+2026-09-22T03:59:55.776332	WARN	server/server.go:88	HTTP server stopped

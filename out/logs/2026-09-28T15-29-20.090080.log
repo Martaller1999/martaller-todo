@@ -1,0 +1,7 @@
+2026-09-28T18:29:20.090219	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-28T18:29:20.122082	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-28T18:29:20.122161	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-28T18:29:20.122313	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-28T18:29:34.925997	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "7d5dfe6a-2d29-4663-b977-4af4925876a6", "url": "/api/v1/users", "http method": "POST", "time": "2026-09-28T15:29:34.925995"}
+2026-09-28T18:29:34.977141	ERROR	response/handler.go:68	failed to create user	{"request_id": "7d5dfe6a-2d29-4663-b977-4af4925876a6", "url": "/api/v1/users", "error": "create user: ошибка сканирования: ERROR: column \"versionm\" does not exist (SQLSTATE 42703)"}
+2026-09-28T18:29:34.977380	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "7d5dfe6a-2d29-4663-b977-4af4925876a6", "url": "/api/v1/users", "status_code": 500, "latency": "51.383747ms"}

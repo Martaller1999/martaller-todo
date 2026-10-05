@@ -1,0 +1,7 @@
+2026-09-28T19:21:41.566235	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-28T19:21:41.580205	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-28T19:21:41.580266	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-28T19:21:41.580372	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-28T19:21:48.946421	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "17459779-6730-4263-ba32-2385a73123fc", "url": "/api/v1/users", "http method": "POST", "time": "2026-09-28T16:21:48.946420"}
+2026-09-28T19:21:48.988174	ERROR	response/handler.go:68	failed to create user	{"request_id": "17459779-6730-4263-ba32-2385a73123fc", "url": "/api/v1/users", "error": "create user: ошибка сканирования: ERROR: column \"phone_nimber\" does not exist (SQLSTATE 42703)"}
+2026-09-28T19:21:48.988396	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "17459779-6730-4263-ba32-2385a73123fc", "url": "/api/v1/users", "status_code": 500, "latency": "41.974922ms"}

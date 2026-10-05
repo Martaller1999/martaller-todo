@@ -1,0 +1,7 @@
+2026-09-28T19:46:17.048448	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-28T19:46:17.057026	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-28T19:46:17.057163	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-28T19:46:17.057317	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-28T19:46:22.461273	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "53d9ac76-f949-4896-815a-3b3a44431bbd", "url": "/api/v1/users", "http method": "POST", "time": "2026-09-28T16:46:22.461271"}
+2026-09-28T19:46:22.463887	ERROR	response/handler.go:68	failed to create user	{"request_id": "53d9ac76-f949-4896-815a-3b3a44431bbd", "url": "/api/v1/users", "error": "create user: ошибка сканирования: number of field descriptions must equal number of destinations, got 3 and 4"}
+2026-09-28T19:46:22.464036	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "53d9ac76-f949-4896-815a-3b3a44431bbd", "url": "/api/v1/users", "status_code": 500, "latency": "2.764351ms"}

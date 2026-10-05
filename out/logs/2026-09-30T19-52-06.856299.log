@@ -1,0 +1,12 @@
+2026-09-30T22:52:06.856497	DEBUG	todoapp/main.go:38	initializing postgres connection pool
+2026-09-30T22:52:06.871549	DEBUG	todoapp/main.go:48	initializing feature	{"feature": "users"}
+2026-09-30T22:52:06.871703	DEBUG	todoapp/main.go:54	initializing HTTP server
+2026-09-30T22:52:06.872023	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-30T22:53:08.461265	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "617aaa3b-24e1-4528-9aea-884d41cafe31", "url": "/api/v1/users/2", "http method": "GET", "time": "2026-09-30T19:53:08.461263"}
+2026-09-30T22:53:08.466936	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "617aaa3b-24e1-4528-9aea-884d41cafe31", "url": "/api/v1/users/2", "status_code": 200, "latency": "5.663059ms"}
+2026-09-30T22:55:35.252104	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "d38eff0a-b999-496c-b0fa-be7727de41b5", "url": "/api/v1/users", "http method": "GET", "time": "2026-09-30T19:55:35.252074"}
+2026-09-30T22:55:35.254787	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "d38eff0a-b999-496c-b0fa-be7727de41b5", "url": "/api/v1/users", "status_code": 200, "latency": "2.710555ms"}
+2026-09-30T22:57:38.420632	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "1419d338-3174-4632-bba0-9eb1d5b9aefc", "url": "/api/v1/user/228", "http method": "GET", "time": "2026-09-30T19:57:38.420611"}
+2026-09-30T22:57:38.420802	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "1419d338-3174-4632-bba0-9eb1d5b9aefc", "url": "/api/v1/user/228", "status_code": 404, "latency": "189.799µs"}
+2026-10-02T15:20:31.088602	WARN	server/server.go:74	shutdown HTTP server...
+2026-10-02T15:20:31.162960	WARN	server/server.go:88	HTTP server stopped

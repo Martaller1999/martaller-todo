@@ -1,0 +1,14 @@
+2026-09-20T19:35:45.077461	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-20T19:35:45.100569	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-20T19:35:45.100662	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-20T19:35:45.102455	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-20T21:16:50.459317	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "1c23a9be-4c5b-4a82-8f61-563da85cb140", "url": "/api/v1/users", "time": "2026-09-20T18:16:50.459315"}
+2026-09-20T21:16:50.459800	DEBUG	http/create_user.go:25	invoce CreateUser handler	{"request_id": "1c23a9be-4c5b-4a82-8f61-563da85cb140", "url": "/api/v1/users"}
+2026-09-20T21:16:50.460702	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "1c23a9be-4c5b-4a82-8f61-563da85cb140", "url": "/api/v1/users", "error": "decode json: EOF"}
+2026-09-20T21:16:50.461336	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "1c23a9be-4c5b-4a82-8f61-563da85cb140", "url": "/api/v1/users", "error": "EOF"}
+2026-09-20T21:16:50.461392	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "1c23a9be-4c5b-4a82-8f61-563da85cb140", "url": "/api/v1/users", "status_code": 500, "latency": "2.076558ms"}
+2026-09-20T21:18:07.763509	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "761b2ab1-6e5f-4bb8-8ce4-1c3c9ec7ca35", "url": "/api/v1/users", "time": "2026-09-20T18:18:07.755882"}
+2026-09-20T21:18:07.763651	DEBUG	http/create_user.go:25	invoce CreateUser handler	{"request_id": "761b2ab1-6e5f-4bb8-8ce4-1c3c9ec7ca35", "url": "/api/v1/users"}
+2026-09-20T21:18:07.765410	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "761b2ab1-6e5f-4bb8-8ce4-1c3c9ec7ca35", "url": "/api/v1/users", "error": "request validation: Key: 'CreateUserRequest.FullName' Error:Field validation for 'FullName' failed on the 'required' tag"}
+2026-09-20T21:18:07.765485	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "761b2ab1-6e5f-4bb8-8ce4-1c3c9ec7ca35", "url": "/api/v1/users", "error": "EOF"}
+2026-09-20T21:18:07.765514	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "761b2ab1-6e5f-4bb8-8ce4-1c3c9ec7ca35", "url": "/api/v1/users", "status_code": 500, "latency": "9.631199ms"}

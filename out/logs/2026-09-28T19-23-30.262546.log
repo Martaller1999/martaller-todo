@@ -1,0 +1,9 @@
+2026-09-28T22:23:30.262704	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-28T22:23:30.283932	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-28T22:23:30.284067	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-28T22:23:30.284210	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-28T22:23:34.976988	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "e18e8d4b-7ec4-4627-9d19-ef13ce0c540d", "url": "/api/v1/users", "http method": "POST", "time": "2026-09-28T19:23:34.976986"}
+2026-09-28T22:23:34.979850	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "e18e8d4b-7ec4-4627-9d19-ef13ce0c540d", "url": "/api/v1/users", "status_code": 201, "latency": "2.861047ms"}
+2026-09-28T22:26:45.441924	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "818f7d1d-5c89-4046-8366-3a5c2add1097", "url": "/api/v1/users", "http method": "GET", "time": "2026-09-28T19:26:45.441894"}
+2026-09-28T22:26:45.483381	ERROR	response/handler.go:68	failed to get users	{"request_id": "818f7d1d-5c89-4046-8366-3a5c2add1097", "url": "/api/v1/users", "error": "get users from repository"}
+2026-09-28T22:26:45.483614	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "818f7d1d-5c89-4046-8366-3a5c2add1097", "url": "/api/v1/users", "status_code": 500, "latency": "41.719369ms"}

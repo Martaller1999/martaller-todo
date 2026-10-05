@@ -1,0 +1,8 @@
+2026-09-22T02:56:40.443629	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-22T02:56:40.454995	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-22T02:56:40.455104	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-22T02:56:40.455243	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-22T02:56:50.996504	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "d9e47a0f-5b04-47a3-989a-517b10ccf0c6", "url": "/api/v1/users", "time": "2026-09-21T23:56:50.996502"}
+2026-09-22T02:56:50.996569	DEBUG	http/create_user.go:26	invoce CreateUser handler	{"request_id": "d9e47a0f-5b04-47a3-989a-517b10ccf0c6", "url": "/api/v1/users"}
+2026-09-22T02:56:50.996839	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "d9e47a0f-5b04-47a3-989a-517b10ccf0c6", "url": "/api/v1/users", "error": "EOF"}
+2026-09-22T02:56:50.996954	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "d9e47a0f-5b04-47a3-989a-517b10ccf0c6", "url": "/api/v1/users", "status_code": 500, "latency": "451.003µs"}

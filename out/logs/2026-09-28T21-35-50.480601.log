@@ -1,0 +1,12 @@
+2026-09-29T00:35:50.480700	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-29T00:35:50.488134	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-29T00:35:50.488210	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-29T00:35:50.488335	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-29T00:35:56.690241	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "5b16acc6-c388-44bf-80a1-bcf6576f999f", "url": "/api/v1/users", "http method": "GET", "time": "2026-09-28T21:35:56.690239"}
+2026-09-29T00:35:56.694059	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "5b16acc6-c388-44bf-80a1-bcf6576f999f", "url": "/api/v1/users", "status_code": 200, "latency": "3.817909ms"}
+2026-09-29T00:42:11.709274	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "ce10d39c-7434-468f-8958-aa23c573f6a9", "url": "/api/v1/users/1", "http method": "PATCH", "time": "2026-09-28T21:42:11.709262"}
+2026-09-29T00:42:11.718344	WARN	response/handler.go:68	ошибка при обновлении данных о пользователе	{"request_id": "ce10d39c-7434-468f-8958-aa23c573f6a9", "url": "/api/v1/users/1", "error": "apply user patch: validate patched user: Неверный номер телефона `PhoneNumber` len: 26: invalid argument"}
+2026-09-29T00:42:11.718478	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "ce10d39c-7434-468f-8958-aa23c573f6a9", "url": "/api/v1/users/1", "status_code": 400, "latency": "9.214979ms"}
+2026-09-29T01:30:25.668535	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "163107b0-27be-4b1a-9f46-fa2e89917b37", "url": "/api/v1/users/1", "http method": "PATCH", "time": "2026-09-28T22:30:25.668503"}
+2026-09-29T01:30:25.686071	WARN	response/handler.go:68	ошибка при обновлении данных о пользователе	{"request_id": "163107b0-27be-4b1a-9f46-fa2e89917b37", "url": "/api/v1/users/1", "error": "apply user patch: validate patched user: Неверный номер телефона `PhoneNumber` len: 26: invalid argument"}
+2026-09-29T01:30:25.686191	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "163107b0-27be-4b1a-9f46-fa2e89917b37", "url": "/api/v1/users/1", "status_code": 400, "latency": "17.686489ms"}

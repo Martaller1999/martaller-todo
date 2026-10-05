@@ -1,0 +1,2 @@
+2026-09-24T02:11:20.150430	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-24T02:11:20.165860	FATAL	todoapp/main.go:40	failed to init postgres connection pool	{"error": "pgxpool ping: failed to connect to `user=test-user-123 database=test-db`: 127.0.0.1:5432 (localhost): failed SASL auth: ВАЖНО: пользователь \"test-user-123\" не прошёл проверку подлинности (по паролю) (SQLSTATE 28P01)"}

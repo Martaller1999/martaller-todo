@@ -1,0 +1,12 @@
+2026-10-05T15:35:26.806830	DEBUG	todoapp/main.go:38	initializing postgres connection pool
+2026-10-05T15:35:26.831371	DEBUG	todoapp/main.go:48	initializing feature	{"feature": "users"}
+2026-10-05T15:35:26.831479	DEBUG	todoapp/main.go:54	initializing HTTP server
+2026-10-05T15:35:26.831613	WARN	server/server.go:59	start HTTP server	{"addr": ":5050"}
+2026-10-05T15:38:19.357629	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "ddf43627-f3ad-4dca-813d-b9de31d0be30", "url": "/api/v1/users", "http method": "PATCH", "time": "2026-10-05T12:38:19.357627"}
+2026-10-05T15:38:19.357749	DEBUG	middleware/common.go:66	<<< обработан HTTP запрос	{"request_id": "ddf43627-f3ad-4dca-813d-b9de31d0be30", "url": "/api/v1/users", "status_code": 405, "latency": "121.05µs"}
+2026-10-05T15:47:25.448047	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "d6c163d3-0eeb-4c65-a00c-f3d700fc9e99", "url": "/api/v1/users", "http method": "GET", "time": "2026-10-05T12:47:25.448030"}
+2026-10-05T15:47:25.448129	DEBUG	middleware/dummy.go:17	-> before: get users middleware	{"request_id": "d6c163d3-0eeb-4c65-a00c-f3d700fc9e99", "url": "/api/v1/users"}
+2026-10-05T15:47:25.451249	DEBUG	middleware/dummy.go:21	<- after: get users middleware	{"request_id": "d6c163d3-0eeb-4c65-a00c-f3d700fc9e99", "url": "/api/v1/users"}
+2026-10-05T15:47:25.451329	DEBUG	middleware/common.go:66	<<< обработан HTTP запрос	{"request_id": "d6c163d3-0eeb-4c65-a00c-f3d700fc9e99", "url": "/api/v1/users", "status_code": 200, "latency": "3.299035ms"}
+2026-10-05T17:29:26.155476	WARN	server/server.go:75	shutdown HTTP server...
+2026-10-05T17:29:26.155822	WARN	server/server.go:89	HTTP server stopped

@@ -1,0 +1,18 @@
+2026-09-29T15:12:51.917493	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-29T15:12:51.930137	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-29T15:12:51.930251	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-29T15:12:51.930389	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-29T15:12:57.185162	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "8270ff0b-3859-4fc1-ba4c-e4fbe6c76c41", "url": "/api/v1/users/1", "http method": "PATCH", "time": "2026-09-29T12:12:57.185160"}
+2026-09-29T15:12:57.205207	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "8270ff0b-3859-4fc1-ba4c-e4fbe6c76c41", "url": "/api/v1/users/1", "status_code": 200, "latency": "20.044581ms"}
+2026-09-29T18:04:45.233321	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "3fb4e625-6d31-4ff4-9386-1f1d40eab9a7", "url": "/api/v1/users/2", "http method": "PATCH", "time": "2026-09-29T15:04:45.233279"}
+2026-09-29T18:04:45.241216	WARN	response/handler.go:68	failed to decode and validate HTTP request	{"request_id": "3fb4e625-6d31-4ff4-9386-1f1d40eab9a7", "url": "/api/v1/users/2", "error": "request validation: `FullName` должно быть от 3 до 100 символов: invalid argument"}
+2026-09-29T18:04:45.241617	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "3fb4e625-6d31-4ff4-9386-1f1d40eab9a7", "url": "/api/v1/users/2", "status_code": 400, "latency": "8.336123ms"}
+2026-09-29T19:04:52.391151	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "70edb597-7a7d-47a3-9b5b-3bbee53fb824", "url": "/api/v1/users", "http method": "GET", "time": "2026-09-29T16:04:52.391127"}
+2026-09-29T19:04:52.406248	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "70edb597-7a7d-47a3-9b5b-3bbee53fb824", "url": "/api/v1/users", "status_code": 200, "latency": "15.117292ms"}
+2026-09-29T19:06:51.367243	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "b6e1b71e-8da3-4b99-aaa5-fbf8f2c53e51", "url": "/api/v1/users/2", "http method": "PATCH", "time": "2026-09-29T16:06:51.367214"}
+2026-09-29T19:06:51.374593	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "b6e1b71e-8da3-4b99-aaa5-fbf8f2c53e51", "url": "/api/v1/users/2", "status_code": 200, "latency": "7.374753ms"}
+2026-09-29T19:07:09.183460	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "528aefdf-a45d-43a7-bf1b-f30987e74132", "url": "/api/v1/users", "http method": "GET", "time": "2026-09-29T16:07:09.183457"}
+2026-09-29T19:07:09.186426	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "528aefdf-a45d-43a7-bf1b-f30987e74132", "url": "/api/v1/users", "status_code": 200, "latency": "2.96535ms"}
+2026-09-29T19:24:12.875890	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "3c616652-b51a-4581-a823-49e8b01d02c2", "url": "/api/v1/users/1242135513", "http method": "PATCH", "time": "2026-09-29T16:24:12.875863"}
+2026-09-29T19:24:12.884576	DEBUG	response/handler.go:68	ошибка при обновлении данных о пользователе	{"request_id": "3c616652-b51a-4581-a823-49e8b01d02c2", "url": "/api/v1/users/1242135513", "error": "get user: user with id='1242135513': not found"}
+2026-09-29T19:24:12.884730	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "3c616652-b51a-4581-a823-49e8b01d02c2", "url": "/api/v1/users/1242135513", "status_code": 404, "latency": "8.866012ms"}

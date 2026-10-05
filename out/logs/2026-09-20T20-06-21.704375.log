@@ -1,0 +1,19 @@
+2026-09-20T23:06:21.704473	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-20T23:06:21.736067	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-20T23:06:21.736185	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-20T23:06:21.736365	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-21T01:31:16.392061	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "f3cb47e1-c482-4521-b3a7-8bd9e8249ed7", "url": "/api/v1/users", "time": "2026-09-20T22:31:16.392059"}
+2026-09-21T01:31:16.447723	ERROR	response/handler.go:64	failed to get users	{"request_id": "f3cb47e1-c482-4521-b3a7-8bd9e8249ed7", "url": "/api/v1/users", "error": "get users from repository"}
+2026-09-21T01:31:16.448432	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "f3cb47e1-c482-4521-b3a7-8bd9e8249ed7", "url": "/api/v1/users", "status_code": 500, "latency": "56.371814ms"}
+2026-09-21T01:32:12.349013	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "66a5d099-843f-4d8e-8259-89a0610cf665", "url": "/api/v1/users", "time": "2026-09-20T22:32:12.349010"}
+2026-09-21T01:32:12.390634	ERROR	response/handler.go:64	failed to get users	{"request_id": "66a5d099-843f-4d8e-8259-89a0610cf665", "url": "/api/v1/users", "error": "get users from repository"}
+2026-09-21T01:32:12.390830	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "66a5d099-843f-4d8e-8259-89a0610cf665", "url": "/api/v1/users", "status_code": 500, "latency": "41.818555ms"}
+2026-09-21T01:32:36.840230	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "cc578e11-2299-4666-8793-2e3f802d0be8", "url": "/api/v1/users", "time": "2026-09-20T22:32:36.840229"}
+2026-09-21T01:32:36.885480	ERROR	response/handler.go:64	failed to get users	{"request_id": "cc578e11-2299-4666-8793-2e3f802d0be8", "url": "/api/v1/users", "error": "get users from repository"}
+2026-09-21T01:32:36.885783	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "cc578e11-2299-4666-8793-2e3f802d0be8", "url": "/api/v1/users", "status_code": 500, "latency": "45.553513ms"}
+2026-09-21T01:33:59.676202	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "bbb61f86-da87-4d4e-ae81-30d0fb045fab", "url": "/api/v1/users", "time": "2026-09-20T22:33:59.668808"}
+2026-09-21T01:33:59.676309	DEBUG	http/create_user.go:25	invoce CreateUser handler	{"request_id": "bbb61f86-da87-4d4e-ae81-30d0fb045fab", "url": "/api/v1/users"}
+2026-09-21T01:33:59.677180	ERROR	response/handler.go:64	failed to decode and validate HTTP request	{"request_id": "bbb61f86-da87-4d4e-ae81-30d0fb045fab", "url": "/api/v1/users", "error": "EOF"}
+2026-09-21T01:33:59.677314	DEBUG	middleware/common.go:88	<<< обработан HTTP запрос	{"request_id": "bbb61f86-da87-4d4e-ae81-30d0fb045fab", "url": "/api/v1/users", "status_code": 500, "latency": "8.505335ms"}
+2026-09-21T03:05:51.259367	WARN	server/server.go:74	shutdown HTTP server...
+2026-09-21T03:05:51.263478	WARN	server/server.go:88	HTTP server stopped

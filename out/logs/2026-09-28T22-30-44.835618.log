@@ -1,0 +1,7 @@
+2026-09-29T01:30:44.835740	DEBUG	todoapp/main.go:34	initializing postgres connection pool
+2026-09-29T01:30:44.842399	DEBUG	todoapp/main.go:44	initializing feature	{"feature": "users"}
+2026-09-29T01:30:44.842471	DEBUG	todoapp/main.go:50	initializing HTTP server
+2026-09-29T01:30:44.842587	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-09-29T01:30:50.141077	DEBUG	middleware/common.go:81	>>> incoming HTTP request	{"request_id": "24edc4f6-4be8-45f4-9936-2bfc1e3f800e", "url": "/api/v1/users/1", "http method": "PATCH", "time": "2026-09-28T22:30:50.141075"}
+2026-09-29T01:30:50.142783	WARN	response/handler.go:68	ошибка при обновлении данных о пользователе	{"request_id": "24edc4f6-4be8-45f4-9936-2bfc1e3f800e", "url": "/api/v1/users/1", "error": "apply user patch: validate patched user: Неверный номер телефона `PhoneNumber` len: 26: invalid argument"}
+2026-09-29T01:30:50.142944	DEBUG	middleware/common.go:89	<<< обработан HTTP запрос	{"request_id": "24edc4f6-4be8-45f4-9936-2bfc1e3f800e", "url": "/api/v1/users/1", "status_code": 400, "latency": "1.868029ms"}

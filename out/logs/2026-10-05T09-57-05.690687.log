@@ -1,0 +1,15 @@
+2026-10-05T12:57:05.690781	DEBUG	todoapp/main.go:38	initializing postgres connection pool
+2026-10-05T12:57:05.698586	DEBUG	todoapp/main.go:48	initializing feature	{"feature": "users"}
+2026-10-05T12:57:05.698648	DEBUG	todoapp/main.go:54	initializing HTTP server
+2026-10-05T12:57:05.698757	WARN	server/server.go:58	start HTTP server	{"addr": ":5050"}
+2026-10-05T13:16:30.252609	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "4101aa38-8838-4f90-89d0-d2f00d476e63", "url": "/api/v1/users", "http method": "GET", "time": "2026-10-05T10:16:30.252606"}
+2026-10-05T13:16:30.261386	DEBUG	middleware/common.go:66	<<< обработан HTTP запрос	{"request_id": "4101aa38-8838-4f90-89d0-d2f00d476e63", "url": "/api/v1/users", "status_code": 200, "latency": "8.776477ms"}
+2026-10-05T13:17:43.959754	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "c463218b-75f7-4523-8ac3-8d797199aebe", "url": "/api/v1/users/2", "http method": "GET", "time": "2026-10-05T10:17:43.959739"}
+2026-10-05T13:17:43.962617	DEBUG	middleware/common.go:66	<<< обработан HTTP запрос	{"request_id": "c463218b-75f7-4523-8ac3-8d797199aebe", "url": "/api/v1/users/2", "status_code": 200, "latency": "2.873146ms"}
+2026-10-05T13:18:11.235614	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "3c492e60-7772-4c20-9fec-25d2798ce771", "url": "/api/v1/users/1488", "http method": "GET", "time": "2026-10-05T10:18:11.235611"}
+2026-10-05T13:18:11.236642	DEBUG	response/handler.go:68	ошибка при получении пользователя	{"request_id": "3c492e60-7772-4c20-9fec-25d2798ce771", "url": "/api/v1/users/1488", "error": "получение пользователя из репозитория: user with id='1488': not found"}
+2026-10-05T13:18:11.236811	DEBUG	middleware/common.go:66	<<< обработан HTTP запрос	{"request_id": "3c492e60-7772-4c20-9fec-25d2798ce771", "url": "/api/v1/users/1488", "status_code": 404, "latency": "1.198699ms"}
+2026-10-05T13:27:09.976224	DEBUG	middleware/common.go:58	>>> incoming HTTP request	{"request_id": "8aa14067-5c2c-4527-b2b9-d4f1d1db6848", "url": "/api/v1/users/3", "http method": "PATCH", "time": "2026-10-05T10:27:09.976206"}
+2026-10-05T13:27:09.989878	DEBUG	middleware/common.go:66	<<< обработан HTTP запрос	{"request_id": "8aa14067-5c2c-4527-b2b9-d4f1d1db6848", "url": "/api/v1/users/3", "status_code": 200, "latency": "13.668835ms"}
+2026-10-05T15:35:21.288609	WARN	server/server.go:74	shutdown HTTP server...
+2026-10-05T15:35:21.289152	WARN	server/server.go:88	HTTP server stopped
